@@ -1,0 +1,30 @@
+{
+  "name": "mytarget-api",
+  "version": "0.0.1",
+  "description": "MyTarget API Client Library for Node.js",
+  "main": "build/src/index.js",
+  "files": [
+    "build/src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "rm -rf build && npm run build"
+  },
+  "keywords": [
+    "mytarget",
+    "mytarget api",
+    "mytarget client",
+    "mytarget node",
+    "mytarget javascript",
+    "mytarget typescript"
+  ],
+  "author": "Anton Golosnichenko <anton@easycoders.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
