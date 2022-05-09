@@ -1,7 +1,7 @@
 {
   "name": "mytarget-api",
-  "version": "0.1.0",
-  "description": "MyTarget API Client Library for Node.js",
+  "version": "0.1.1",
+  "description": "MyTarget API Client Library for Node.js. WARNING: this package is still under development. PLEASE DO NOT USE IN PRODUCTION",
   "repository": "https://github.com/agolosnichenko/mytarget-client-node",
   "main": "build/src/index.js",
   "files": [
