@@ -1,13 +1,14 @@
 {
   "name": "mytarget-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "MyTarget API Client Library for Node.js",
+  "repository": "https://github.com/agolosnichenko/mytarget-client-node",
   "main": "build/src/index.js",
   "files": [
     "build/src"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "build": "tsc",
     "prepare": "rm -rf build && npm run build"
   },
@@ -25,6 +26,9 @@
     "axios": "^0.27.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
     "typescript": "^4.6.4"
   }
 }
