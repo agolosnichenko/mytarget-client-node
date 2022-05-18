@@ -667,6 +667,10 @@ export type UserClient = {
    * Имя клиента внутри сервиса.
    */
   readonly username: string;
+  /**
+   * Имя клиента агентства.
+   */
+  readonly client_username: string;
 };
 
 /**

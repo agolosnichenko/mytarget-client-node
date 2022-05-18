@@ -1,4 +1,4 @@
-import { BaseApiMethod } from 'api/BaseApiMethod';
+import { BaseApiMethod } from '../BaseApiMethod';
 import { AxiosPromise } from 'axios';
 import type {
   AgencyClient,
@@ -25,7 +25,7 @@ export class AgencyClients extends BaseApiMethod {
    */
   list(
     params?: Partial<AgencyClientsListInput>,
-  ): AxiosPromise<AgencyClientsListOutput> {
+  ): Promise<AgencyClientsListOutput> {
     return this._api.call({
       method: 'get',
       endpoint: this._endpoint,

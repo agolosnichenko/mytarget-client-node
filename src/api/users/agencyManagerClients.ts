@@ -1,6 +1,6 @@
-import { BaseApiMethod } from 'api/BaseApiMethod';
-import { AgencyManagerClient } from './types';
+import { BaseApiMethod } from '../BaseApiMethod';
 import {
+  AgencyManagerClient,
   AgencyManagerClientsCreateOutput,
   AgencyManagerClientsListInput,
   AgencyManagerClientsConstructor,

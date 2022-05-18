@@ -1,3 +1,3 @@
-import { BaseApiMethodConstructor } from 'types';
+import { BaseApiMethodConstructor } from '../../../types';
 
 export type UserConstructor = BaseApiMethodConstructor;

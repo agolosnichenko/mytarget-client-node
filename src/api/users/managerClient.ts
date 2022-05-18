@@ -1,4 +1,4 @@
-import { BaseApiMethod } from 'api/BaseApiMethod';
+import { BaseApiMethod } from '../BaseApiMethod';
 import type {
   ManagerClientConstructor,
   ManagerClient as ManagerClientInput,

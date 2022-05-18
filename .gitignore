@@ -79,4 +79,4 @@ typings/
 *.tsbuildinfo
 
 # Library build folder
-build
+dist

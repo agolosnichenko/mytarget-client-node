@@ -1,4 +1,4 @@
-import { BaseApiMethod } from 'api/BaseApiMethod';
+import { BaseApiMethod } from '../BaseApiMethod';
 import type {
   ReservedAmountsConstructor,
   ReservedAmounts as ReservedAmountsOutput,

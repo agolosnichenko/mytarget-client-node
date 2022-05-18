@@ -1,4 +1,4 @@
-import { BaseApiMethodConstructor } from 'types';
+import { BaseApiMethodConstructor } from '../../../types';
 
 export type AgencyManagerClientConstructor = BaseApiMethodConstructor & {
   manager_id?: number;

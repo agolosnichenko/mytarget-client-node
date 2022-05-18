@@ -1,4 +1,4 @@
-import type { MyTargetClient } from 'client';
+import type { MyTargetClient } from '../client';
 
 /**
  * Базовый класс для методов API

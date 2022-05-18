@@ -1,4 +1,4 @@
-import {
+import type {
   ClearAccessTokensInput,
   ClientError,
   Credentials,
@@ -8,6 +8,7 @@ import {
 } from './types';
 import * as qs from 'qs';
 import axios from 'axios';
+import Stats from './api/stats';
 import Users from './api/users';
 
 const HOST = 'https://target.my.com';
@@ -17,7 +18,8 @@ const AXIOS_HEADERS = {
 
 export class MyTargetClient {
   readonly credentials: Credentials;
-  users = new Users(this);
+  users: Users = new Users(this);
+  stats: Stats = new Stats(this);
 
   constructor(credentials: Credentials) {
     if (!credentials) throw new Error('Credentials required');
@@ -67,7 +69,7 @@ export class MyTargetClient {
     const result = await axios({
       method,
       url: `${HOST}${endpoint}`,
-      data,
+      ...(method === 'get' ? { params: data } : { data }),
       headers: {
         'content-type': 'application/json',
         Authorization: `Bearer ${this.credentials.access_token}`,

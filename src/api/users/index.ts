@@ -1,4 +1,4 @@
-import { MyTargetClient } from 'client';
+import { MyTargetClient } from '../../client';
 import { AgencyClient } from './agencyClient';
 import { AgencyClients } from './agencyClients';
 import { AgencyClientsCount } from './agencyClientsCount';
@@ -28,10 +28,10 @@ import type {
 
 export default class Users {
   constructor(private api: MyTargetClient) {}
-  agencyClient(params: Omit<AgencyClientConstructor, 'api'>) {
+  agencyClient(params: Omit<AgencyClientConstructor, 'api'>): AgencyClient {
     return new AgencyClient({ ...params, api: this.api });
   }
-  agencyClients = new AgencyClients({ api: this.api });
+  agencyClients: AgencyClients = new AgencyClients({ api: this.api });
   agencyClientsCount = new AgencyClientsCount({ api: this.api });
   agencyManager(params: Omit<AgencyManagerConstructor, 'api'>) {
     return new AgencyManager({ ...params, api: this.api });

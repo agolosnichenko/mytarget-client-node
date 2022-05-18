@@ -1,16 +1,16 @@
 {
   "name": "mytarget-api",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "MyTarget API Client Library for Node.js. WARNING: this package is still under development. PLEASE DO NOT USE IN PRODUCTION",
   "repository": "https://github.com/agolosnichenko/mytarget-client-node",
-  "main": "build/src/index.js",
+  "main": "dist/index.js",
   "files": [
-    "build/src"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "tsc",
-    "prepare": "rm -rf build && npm run build"
+    "prebuild": "rm -rf dist",
+    "build": "tsc"
   },
   "keywords": [
     "mytarget",
@@ -23,7 +23,9 @@
   "author": "Anton Golosnichenko <anton@easycoders.ru>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.2",
+    "qs": "^6.10.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
